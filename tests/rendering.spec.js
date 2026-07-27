@@ -6,7 +6,7 @@ const { calculatorLabels } = require('../ui-labels/calculatorLabels');
 
 test.describe('Server-Side Calculator - Rendering (Critical)', () => {
 
-    test('TC-R-001: the page loads successfully with the whole form visible', async ({ page }) => {
+    test('TC-R-001: [Server-Side Calculator] Page loads successfully', async ({ page }) => {
         const calculatorPage = new CalculatorPage(page);
 
         const consoleErrors = [];
@@ -27,7 +27,7 @@ test.describe('Server-Side Calculator - Rendering (Critical)', () => {
         expect(consoleErrors).toHaveLength(0);
     });
 
-    test('TC-R-003: the form shows up with everything in its default state', async ({ page }) => {
+    test('TC-R-003: [Server-Side Calculator] Core input elements are present with correct default state', async ({ page }) => {
         const calculatorPage = new CalculatorPage(page);
         await calculatorPage.navigateToCalculator(process.env.CALCULATOR_URL);
 

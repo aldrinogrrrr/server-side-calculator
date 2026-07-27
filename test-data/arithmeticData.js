@@ -5,7 +5,11 @@ export const arithmeticCases = [
     { description: 'straightforward division', numberOne: '20', operator: 'divide', numberTwo: '4', expected: '5' },
     { description: 'adding two negative numbers', numberOne: '-5', operator: 'plus', numberTwo: '-3', expected: '-8' },
     { description: 'subtracting into negative territory', numberOne: '3', operator: 'minus', numberTwo: '10', expected: '-7' },
+    { description: 'multiplying by negative number', numberOne: '4', operator: 'times', numberTwo: '-5', expected: '-20' },
     { description: 'decimal addition', numberOne: '2.5', operator: 'plus', numberTwo: '2.5', expected: '5' },
     { description: 'zero as an operand', numberOne: '0', operator: 'times', numberTwo: '25', expected: '0' },
     { description: 'a leading zero should not confuse the parser', numberOne: '007', operator: 'plus', numberTwo: '3', expected: '10' },
+    { description: 'padded spaces should be handled properly', numberOne: ' 5 ', operator: 'plus', numberTwo: '5', expected: '10' },
+    { description: 'very large numbers', numberOne: '999999999999', operator: 'plus', numberTwo: '1', expected: '1000000000000' },
+    { description: 'division resulting in repeating decimal', numberOne: '10', operator: 'divide', numberTwo: '3', expected: '3.333333' },
 ];
