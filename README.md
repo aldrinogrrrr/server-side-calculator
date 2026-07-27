@@ -173,11 +173,3 @@ npx playwright test --list
 # Run a single quick test
 npx playwright test tests/rendering.spec.js
 ```
-
-## Note on TC-F-004
-
-The app's exact validation message wasn't available while writing this, so instead of checking specific wording, it asserts that bad input never resolves to a clean numeric answer and never throws an unhandled error or triggers a dialog. Worth tightening once you've seen the real behavior.
-
-## Status
-
-All files pass `node --check`, and `npx playwright test --list` shows all 17 test executions registering correctly. Note that this is not yet run end-to-end against the live site from this environment.
