@@ -180,4 +180,4 @@ The app's exact validation message wasn't available while writing this, so inste
 
 ## Status
 
-All files pass `node --check`, and `npx playwright test --list` shows all 17 test executions registering correctly. Not yet run end-to-end against the live site from this environment.
+All files pass `node --check`, and `npx playwright test --list` shows all 17 test executions registering correctly. Note that this is not yet run end-to-end against the live site from this environment.
