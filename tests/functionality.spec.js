@@ -4,7 +4,7 @@ const CalculatorPage = require('../pages/calculatorPage');
 const { arithmeticCases } = require('../test-data/arithmeticData');
 const { invalidInputCases } = require('../test-data/invalidInputData');
 
-test.describe('Server-Side Calculator - Functionality (Critical)', () => {
+test.describe('Server-Side Calculator - Functionality (Critical) @smoke @regression', () => {
 
     test.describe('TC-F-001: [Server-Side Calculator] Core arithmetic — valid numeric inputs', () => {
         for (const testCase of arithmeticCases) {

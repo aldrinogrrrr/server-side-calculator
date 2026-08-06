@@ -4,7 +4,7 @@ const CalculatorPage = require('../pages/calculatorPage');
 const { calculatorLocators } = require('../locators/calculatorLocators');
 const { calculatorLabels } = require('../ui-labels/calculatorLabels');
 
-test.describe('Server-Side Calculator - Rendering (Critical)', () => {
+test.describe('Server-Side Calculator - Rendering (Critical) @smoke @regression', () => {
 
     test('TC-R-001: [Server-Side Calculator] Page loads successfully', async ({ page }) => {
         const calculatorPage = new CalculatorPage(page);
